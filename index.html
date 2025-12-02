@@ -1,92 +1,178 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Architecture Project Proposal</title>
+<head>
+  <meta charset="UTF-8" />
+  <title>Architecture Project Proposal</title>
+  <link rel="stylesheet" href="styles.css">
+
 
 </head>
 <body>
-	<h1>Architecture Project Proposal</h1>
-	<h3>Product Name: Lewis Architecture (alternatively known as: OA Architecture)</h3>
-	<h3>Team Members: Olivia Adamic</h3>
-	<h3>Application Overview</h3>
-	<p>This is a webpage designed to explain my project for credit in CPSC 61200 - Software Architecture and Design. 
-		The main goal is to help Lewis faculty and students be able to teach and to understand essential computer science
-		concepts without worrying about spending more time changing languages, frameworks, or tools. The project is simply
-		called Lewis Architecture and it is designed for students of all levels to be able to learn foundational concepts through 
-		practice and implementation. It can start from building a basic static website to then expanding it with React and then 
-		hosting and deploying a web application through Microsoft Azure with authentication, databases, and APIs which are all skills 
-		that are being sought after in the current job market. The project is designed to be modular and extensible so that new 
-		concepts can be added in the future or changed if necessary. 
 
-		Ideally, the students will be able to follow along with written tutorials provides on the site linked below
-		which also features additional base code, links to helpful resources, and a final example of the project 
-		implemented through all the stages. The project is open source and available on GitHub for anyone to use. 
-		Happy programming and developing to you all! You got this!
+  <h1>Architecture Project Proposal</h1>
 
-		Link to Architecture Resources: <a href="https://www.lewisunivcs.com/">https://www.lewisunivcs.com/</a>
+  <div class="section">
+    <h3>Product Name</h3>
+    <p><strong>Lewis Architecture</strong>  
+    <br>(alternatively known as <strong>OA Architecture</strong>)</p>
 
-		Stages of Learning: 
-		Level 0 - Starting with the Base Code in React
-		Level 1 - Learn Some Basics of React to Enhance the UX/UI Design and Make some Basic API calls
-		Level 2 - Lewis-Tac-Toe with Azure Hosting and CI/CD
-		Level 3 - Lewis-Tac-Toe with Custom Domain and Authentication 
-		Level 4 - Lewis-Tac-Toe with Node.js Server and MongoDB Atlas
-		Level 5 - Lewis-Tac-Toe with Server-Side File Storage and Sharing
-	</p>
-	<h3>Technology Overview</h3>
-	  <h4>Programming Languages</h4>
+    <h3>Team Members</h3>
+    <p><strong>Olivia Adamic</strong></p>
+  </div>
+
+  <div class="section">
+    <h3>Application Overview</h3>
+    <p>
+      This webpage explains my project for credit in <strong>CPSC 61200 - Software Architecture and Design</strong>.
+      The main goal is to help Lewis faculty and students teach and understand essential computer science
+      concepts without worrying about switching languages, frameworks, or tools.  
+      <br><br>
+      The project, called <strong>Lewis Architecture</strong>, is modular and designed for students at all levels.  
+      It begins with basic static web development and progresses through React, cloud deployment, authentication,
+      databases, APIs, and other industry-relevant technologies.  
+      <br><br>
+      Students follow along with written tutorials provided on the site, which includes example code,
+      documentation, and a complete multi-stage version of the project.  
+      <br><br>
+      The project is <strong>open source</strong> and available for the entire Computer Science community.
+      <br><br>
+      Link to Architecture Resources:  
+      <a href="https://www.lewisunivcs.com/">https://www.lewisunivcs.com/</a>
+    </p>
+
+    <div class="level-list">
+      <strong>Stages of Learning:</strong>
       <ul>
-        <li><strong>JavaScript / TypeScript</strong> — Primary front-end language; TypeScript is optional for stronger types</li>
-        <li><strong>HTML5 / CSS3</strong> — Foundational web markup and styling</li>
-        <li><strong>Node.js</strong> — For backend / API development in advanced levels</li>
+        <li><strong>Level 0</strong> — Start with the Base Code in React</li>
+        <li><strong>Level 1</strong> — Enhance UX/UI and Learn Basic React + API Calls</li>
+        <li><strong>Level 2</strong> — Azure Hosting + CI/CD</li>
+        <li><strong>Level 3</strong> — Custom Domain + Auth0 Authentication</li>
+        <li><strong>Level 4</strong> — Node.js Server + MongoDB Atlas</li>
+        <li><strong>Level 5</strong> — Server-Side File Storage & Sharing</li>
       </ul>
+    </div>
+  </div>
 
-      <h4>Frameworks & Libraries</h4>
-      <ul>
-        <li><strong>React.js</strong> — Component-based front-end framework</li>
-        <li><strong>Vite</strong> or <strong>Create React App</strong> — Project scaffolding and build tooling</li>
-        <li><strong>Auth0 React SDK</strong> — Authentication and secure routing</li>
-        <li><strong>Mongoose</strong> — MongoDB ODM for Node.js backends</li>
-      </ul>
+  <div class="section">
+    <h3>Technology Overview</h3>
+    
+    <h4>Programming Languages</h4>
+    <ul>
+      <li><strong>JavaScript / TypeScript</strong> — Primary front-end languages; TypeScript optional</li>
+      <li><strong>HTML5 / CSS3</strong> — Base for early-stage static development</li>
+      <li><strong>Node.js</strong> — Used for API and server development</li>
+    </ul>
 
-      <h4>Cloud Platforms</h4>
-      <ul>
-        <li><strong>GitHub</strong> — Source control, collaboration, and CI/CD integration</li>
-        <li><strong>Azure Static Web Apps</strong> — Hosting for front-end deployments with CI/CD</li>
-        <li><strong>MongoDB Atlas</strong> — Managed NoSQL database for persistent game data and user info</li>
-      </ul>
+    <h4>Frameworks & Libraries</h4>
+    <ul>
+      <li><strong>React.js</strong> — Component-driven front-end UI</li>
+      <li><strong>Vite</strong> / <strong>Create React App</strong> — Project setup tools</li>
+      <li><strong>Auth0 React SDK</strong> — Authentication</li>
+      <li><strong>Mongoose</strong> — MongoDB object modeling for Node.js</li>
+    </ul>
 
-      <h4>Authentication & Security</h4>
-      <ul>
-        <li><strong>Auth0</strong> — Identity management (OAuth2 / OIDC) for secure login, profile claims, and JWTs</li>
-        <li><strong>Environment variables</strong> (.env, GitHub Secrets, Azure settings) — Secure handling of keys and secrets</li>
-      </ul>
+    <h4>Cloud Platforms</h4>
+    <ul>
+      <li><strong>GitHub</strong> — Version control + CI/CD</li>
+      <li><strong>Azure Static Web Apps</strong> — Cloud hosting</li>
+      <li><strong>MongoDB Atlas</strong> — Managed database</li>
+    </ul>
 
-      <h4>Domain & Hosting</h4>
-      <ul>
-        <li><strong>GoDaddy</strong> (or any registrar) — Register and manage custom domains</li>
-        <li><strong>Azure DNS / registrar DNS</strong> — Configure A/CNAME/TXT records to point domain to Azure Static Web Apps</li>
-      </ul>
+    <h4>Authentication & Security</h4>
+    <ul>
+      <li><strong>Auth0</strong> — OAuth2 / OIDC login</li>
+      <li><strong>.env / GitHub Secrets / Azure Settings</strong> — Secret & key management</li>
+    </ul>
 
-      <h4>File & Object Storage</h4>
-      <ul>
-        <li><strong>Azure Blob Storage</strong> — Store user-uploaded assets (avatars, themes, replays)</li>
-        <li><strong>Firebase Storage</strong> — Alternative cloud storage option for file uploads</li>
-      </ul>
+    <h4>Domain & Hosting</h4>
+    <ul>
+      <li><strong>GoDaddy</strong> — Domain registration</li>
+      <li><strong>Azure DNS</strong> — Domain → Azure SWA routing</li>
+    </ul>
 
-      <h4>Tooling & Development Environment</h4>
-      <ul>
-        <li><strong>Visual Studio Code</strong> — Recommended IDE with extensions for linting and formatting</li>
-        <li><strong>GitHub Actions</strong> — CI pipelines: build, test, deploy</li>
-      </ul>
-	
-	<h3>Proposal Last Updated: 12/01/2025</h3>
-	<h3>Feature List</h3>
-	
-	<h3>Future Feature List</h3>
-	<h3>Basic Technical Features</h3>
-	<h3>Advanced Technical Features</h3>
+    <h4>File & Object Storage</h4>
+    <ul>
+      <li><strong>Azure Blob Storage</strong> — Upload and store assets</li>
+      <li><strong>Firebase Storage</strong> — Optional alternative</li>
+    </ul>
+
+    <h4>Tooling & Environment</h4>
+    <ul>
+      <li><strong>Visual Studio Code</strong></li>
+      <li><strong>GitHub Actions</strong> — Automated builds & deploys</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Proposal Last Updated</h3>
+    <p><strong>12/01/2025</strong></p>
+  </div>
+
+  <div class="section">
+    <h3>Feature List</h3>
+    <ul>
+      <li><strong>Basic React Tic-Tac-Toe Game</strong> — 3×3 grid, player turns, winner detection, reset</li>
+      <li><strong>Styling & Theming</strong> — responsive layout, CSS modules or Tailwind, light/dark toggle</li>
+      <li><strong>Static Hosting on Azure</strong> — Azure Static Web Apps deployment</li>
+      <li><strong>Custom Domain Integration</strong> — GoDaddy → Azure DNS mapping</li>
+      <li><strong>Authentication with Auth0</strong> — login/logout, show user name/email, protect game route</li>
+      <li><strong>MongoDB Atlas Integration</strong> — serverless API to record login events and game results (winner, timestamp, moves)</li>
+      <li><strong>File Storage Integration</strong> — upload profile picture to Azure Blob or Firebase Storage, display in UI</li>
+      <li><strong>Protected Match History</strong> — authenticated users can view saved games</li>
+      <li><strong>Play Again Flow</strong> — quick reset and rematch UX</li>
+      <li><strong>Basic error handling & loading states</strong></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Future Feature List</h3>
+    <ul>
+      <li><strong>Online multiplayer mode</strong> — real-time state syncing with WebSockets or Azure SignalR</li>
+      <li><strong>Matchmaking Lobby</strong> — create/join rooms to play against others</li>
+      <li><strong>AI Opponent</strong> — difficulty levels: random, heuristic, minimax</li>
+      <li><strong>Leaderboard</strong> — rank players by wins / win rate</li>
+      <li><strong>Achievement Badges</strong> — reward streaks and milestones</li>
+      <li><strong>Replay System</strong> — save game JSON for step-by-step playback</li>
+      <li><strong>User Settings Page</strong> — change avatar, theme, display name, preferences</li>
+      <li><strong>PWA / Offline Mode</strong> — installable app with cached assets</li>
+      <li><strong>Mobile App</strong> — React Native port</li>
+      <li><strong>Extended Serverless APIs</strong> — analytics, email notifications</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Basic Technical Features</h3>
+    <ul>
+      <li><strong>React component architecture</strong> — functional components, props, hooks</li>
+      <li><strong>Game logic & state</strong> — win/draw detection, resets, and state separation</li>
+      <li><strong>Routing</strong> — react-router for /play, /settings, /history</li>
+      <li><strong>Local persistence</strong> — localStorage for theme & local scores</li>
+      <li><strong>Azure Static Web App hosting</strong> — deploy front-end to cloud</li>
+      <li><strong>GitHub Actions CI/CD</strong> — automated build & deploy pipeline</li>
+      <li><strong>Auth0 integration</strong> — secure login and protected routes</li>
+      <li><strong>REST API calls</strong> — Axios or Fetch to backend/serverless functions</li>
+      <li><strong>MongoDB Atlas connectivity</strong> — save and read game history</li>
+      <li><strong>Environment variable management</strong> — .env, GitHub Secrets, Azure app settings</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Advanced Technical Features</h3>
+    <ul>
+      <li><strong>Role-based access control (RBAC)</strong> — admin vs. user permissions via Auth0</li>
+      <li><strong>Serverless backend (Azure Functions)</strong> — scalable endpoints for game logging and analytics</li>
+      <li><strong>Real-time multiplayer</strong> — WebSockets or Azure SignalR</li>
+      <li><strong>Production logging & monitoring</strong> — Application Insights or equivalent</li>
+      <li><strong>Database schema design & indexing</strong> — optimized collections for game_sessions, user_profiles</li>
+      <li><strong>Caching strategy</strong> — reduce DB load (Redis or in-memory)</li>
+      <li><strong>Containerized backend</strong> — Docker images, optional Azure Container Apps deployment</li>
+      <li><strong>CI/CD with tests & staging</strong> — unit tests, integration tests, preview environments</li>
+      <li><strong>Security hardening</strong> — JWT validation, rate limiting, CORS, secret rotation</li>
+      <li><strong>Performance optimization</strong> — code-splitting, React.memo, lazy-loading</li>
+    </ul>
+  </div>
+
 
 </body>
 </html>
+
