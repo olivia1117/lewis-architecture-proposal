@@ -37,18 +37,21 @@
       The project is <strong>open source</strong> and available for the entire Computer Science community.
       <br><br>
       Link to Architecture Resources:  
-      <a href="https://www.lewisunivcs.com/">https://www.lewisunivcs.com/</a>
+      <a href="https://docs.lewisunivcs.com/">https://docs.lewisunivcs.com/</a>
+      <br><br>
+      Link to Reference Implementation:
+      <a href="https://lewistactoe.lewisunivcs.com/">https://lewistactoe.lewisunivcs.com/</a>
+
     </p>
 
     <div class="level-list">
       <strong>Stages of Learning:</strong>
       <ul>
         <li><strong>Level 0</strong> — Start with the Base Code in React</li>
-        <li><strong>Level 1</strong> — Enhance UX/UI and Learn Basic React + API Calls</li>
-        <li><strong>Level 2</strong> — Azure Hosting + CI/CD</li>
-        <li><strong>Level 3</strong> — Custom Domain + Auth0 Authentication</li>
-        <li><strong>Level 4</strong> — Node.js Server + MongoDB Atlas</li>
-        <li><strong>Level 5</strong> — Server-Side File Storage & Sharing</li>
+        <li><strong>Level 1</strong> — Azure Hosting + CI/CD</li>
+        <li><strong>Level 2</strong> — Custom Domain + Auth0 Authentication</li>
+        <li><strong>Level 3</strong> — Node.js Server + MongoDB Atlas</li>
+        <li><strong>Level 4</strong> — Server-Side File Storage & Sharing</li>
       </ul>
     </div>
   </div>
@@ -68,7 +71,10 @@
       <li><strong>React.js</strong> — Component-driven front-end UI</li>
       <li><strong>Vite</strong> / <strong>Create React App</strong> — Project setup tools</li>
       <li><strong>Auth0 React SDK</strong> — Authentication</li>
-      <li><strong>Mongoose</strong> — MongoDB object modeling for Node.js</li>
+      <li><strong>Node.js / Express.js</strong> — Server-side application and RESTful API endpoints</li>
+      <li><strong>MongoDB</strong> — Database for storing user login history and file uploads</li>
+      <li><strong>Multer</strong> — Middleware for handling file uploads in Node.js</li>
+      <li><strong>GridFS</strong> — Storing and streaming large files in MongoDB</li>
     </ul>
 
     <h4>Cloud Platforms</h4>
@@ -81,44 +87,43 @@
     <h4>Authentication & Security</h4>
     <ul>
       <li><strong>Auth0</strong> — OAuth2 / OIDC login</li>
-      <li><strong>.env / GitHub Secrets / Azure Settings</strong> — Secret & key management</li>
+      <li><strong>.env / Azure Settings</strong> — Secret & key management</li>
     </ul>
 
     <h4>Domain & Hosting</h4>
     <ul>
-      <li><strong>GoDaddy</strong> — Domain registration</li>
-      <li><strong>Azure DNS</strong> — Domain → Azure SWA routing</li>
+      <li><strong>GoDaddy</strong> — Domain registration and management</li>
+      <li><strong>Azure DNS</strong> — Domain to Azure Static Web App routing</li>
     </ul>
 
     <h4>File & Object Storage</h4>
     <ul>
-      <li><strong>Azure Blob Storage</strong> — Upload and store assets</li>
-      <li><strong>Firebase Storage</strong> — Optional alternative</li>
+      <li><strong>MongoDB GridFS</strong> — Storing, uploading, and retrieving user-uploaded files</li>
     </ul>
 
     <h4>Tooling & Environment</h4>
     <ul>
-      <li><strong>Visual Studio Code</strong></li>
+      <li><strong>Visual Studio Code</strong>IDE / coding environment</li>
       <li><strong>GitHub Actions</strong> — Automated builds & deploys</li>
     </ul>
   </div>
 
   <div class="section">
     <h3>Proposal Last Updated</h3>
-    <p><strong>12/01/2025</strong></p>
+    <p><strong>12/07/2025</strong></p>
   </div>
 
   <div class="section">
     <h3>Feature List</h3>
     <ul>
-      <li><strong>Basic React Tic-Tac-Toe Game</strong> — 3×3 grid, player turns, winner detection, reset</li>
-      <li><strong>Styling & Theming</strong> — responsive layout, CSS modules or Tailwind, light/dark toggle</li>
+      <li><strong>Basic React Tic-Tac-Toe Game</strong> — 3×3 grid, player turns with computer, winner detection, resets</li>
+      <li><strong>Styling & Theming</strong> — different color setup for board</li>
       <li><strong>Static Hosting on Azure</strong> — Azure Static Web Apps deployment</li>
-      <li><strong>Custom Domain Integration</strong> — GoDaddy → Azure DNS mapping</li>
-      <li><strong>Authentication with Auth0</strong> — login/logout, show user name/email, protect game route</li>
-      <li><strong>MongoDB Atlas Integration</strong> — serverless API to record login events and game results (winner, timestamp, moves)</li>
-      <li><strong>File Storage Integration</strong> — upload profile picture to Azure Blob or Firebase Storage, display in UI</li>
-      <li><strong>Protected Match History</strong> — authenticated users can view saved games</li>
+      <li><strong>Custom Domain Integration</strong> — GoDaddy to Azure DNS mapping</li>
+      <li><strong>Authentication with Auth0</strong> — login/logout, show user name/email, use Google account to authenticate</li>
+      <li><strong>MongoDB Atlas Integration</strong> — record login events to DB and displays them to the client</li>
+      <li><strong>File Storage Integration</strong> — upload files to DB, show them as a list on the client, and provide links to download</li>
+      <li><strong>Protected Stats</strong> — authenticated users can view their stats for that session</li>
       <li><strong>Play Again Flow</strong> — quick reset and rematch UX</li>
       <li><strong>Basic error handling & loading states</strong></li>
     </ul>
@@ -127,16 +132,12 @@
   <div class="section">
     <h3>Future Feature List</h3>
     <ul>
-      <li><strong>Online multiplayer mode</strong> — real-time state syncing with WebSockets or Azure SignalR</li>
+      <li><strong>Online multiplayer mode</strong></li>
       <li><strong>Matchmaking Lobby</strong> — create/join rooms to play against others</li>
-      <li><strong>AI Opponent</strong> — difficulty levels: random, heuristic, minimax</li>
+      <li><strong>AI Opponent</strong> — includes a variety of difficulty levels</li>
       <li><strong>Leaderboard</strong> — rank players by wins / win rate</li>
       <li><strong>Achievement Badges</strong> — reward streaks and milestones</li>
-      <li><strong>Replay System</strong> — save game JSON for step-by-step playback</li>
       <li><strong>User Settings Page</strong> — change avatar, theme, display name, preferences</li>
-      <li><strong>PWA / Offline Mode</strong> — installable app with cached assets</li>
-      <li><strong>Mobile App</strong> — React Native port</li>
-      <li><strong>Extended Serverless APIs</strong> — analytics, email notifications</li>
     </ul>
   </div>
 
@@ -144,31 +145,25 @@
     <h3>Basic Technical Features</h3>
     <ul>
       <li><strong>React component architecture</strong> — functional components, props, hooks</li>
-      <li><strong>Game logic & state</strong> — win/draw detection, resets, and state separation</li>
-      <li><strong>Routing</strong> — react-router for /play, /settings, /history</li>
-      <li><strong>Local persistence</strong> — localStorage for theme & local scores</li>
+      <li><strong>Game logic & state</strong> — win/draw detection and resets</li>
       <li><strong>Azure Static Web App hosting</strong> — deploy front-end to cloud</li>
+      <li><strong>Azure Web App for server</strong> — deploy Node.js server to cloud</li>
       <li><strong>GitHub Actions CI/CD</strong> — automated build & deploy pipeline</li>
       <li><strong>Auth0 integration</strong> — secure login and protected routes</li>
-      <li><strong>REST API calls</strong> — Axios or Fetch to backend/serverless functions</li>
-      <li><strong>MongoDB Atlas connectivity</strong> — save and read game history</li>
-      <li><strong>Environment variable management</strong> — .env, GitHub Secrets, Azure app settings</li>
+      <li><strong>MongoDB Atlas connectivity</strong> — save login history</li>
+      <li><strong>Environment variable management</strong> — .env, Azure app settings</li>
+      <li><strong>File upload/download</strong> — Multer + GridFS integration</li>
+      
     </ul>
   </div>
 
   <div class="section">
     <h3>Advanced Technical Features</h3>
     <ul>
-      <li><strong>Role-based access control (RBAC)</strong> — admin vs. user permissions via Auth0</li>
-      <li><strong>Serverless backend (Azure Functions)</strong> — scalable endpoints for game logging and analytics</li>
-      <li><strong>Real-time multiplayer</strong> — WebSockets or Azure SignalR</li>
-      <li><strong>Production logging & monitoring</strong> — Application Insights or equivalent</li>
-      <li><strong>Database schema design & indexing</strong> — optimized collections for game_sessions, user_profiles</li>
-      <li><strong>Caching strategy</strong> — reduce DB load (Redis or in-memory)</li>
-      <li><strong>Containerized backend</strong> — Docker images, optional Azure Container Apps deployment</li>
-      <li><strong>CI/CD with tests & staging</strong> — unit tests, integration tests, preview environments</li>
-      <li><strong>Security hardening</strong> — JWT validation, rate limiting, CORS, secret rotation</li>
-      <li><strong>Performance optimization</strong> — code-splitting, React.memo, lazy-loading</li>
+      <li><strong>Role-based access control (RBAC)</strong> — different permissions for regular vs. authenticated user via Auth0</li>
+      <li><strong>Subdomains</strong> — Separated subdomains to share the same base url, but have different purposes for docs vs. implementation</li>
+      <li><strong>Game Stats</strong> — Authenticated users get to view their stats for that session</li>
+
     </ul>
   </div>
 
